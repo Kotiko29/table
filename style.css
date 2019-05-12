@@ -1,0 +1,47 @@
+* {
+    margin: 20px auto; /* устанавливаем по центру */
+   }
+
+table.case {
+    table-layout:fixed; /*Фиксированная разметка макета таблицы*/
+    width: 100%; /*задаем ширину*/
+    max-width: 1000px; 
+    height:600px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    overflow: hidden; /* Скрываем всё за пределами таблицы */
+    text-align: center;
+    }
+
+caption {
+    text-align: center;
+    font: bold 20px serif;
+    color: #2E4360;
+}
+
+th {
+    background: rgb(69, 117, 101);
+}
+
+td, th {
+    padding: 3px; /* Поля вокруг содержимого таблицы */
+    border: 1px solid black; /* Параметры рамки */
+    height: 50px; /* задаем высоту ячейкам */
+   }
+
+   
+table tr:nth-child(2n) td { background:#e7eaf5; } /* подсвечиваем каждую вторую строку */
+
+/*  table :hover tr:nth-child(2n) td {background-color: #8d8dff}; при наведении подсвечивается каждая вторая строка */
+
+table tr:nth-child(2n+1) td:first-child { 
+    width: 2em; 
+    height: 2em;
+    margin: 1em 1em;
+    background: #02C986;
+    border-radius: 250% 0;
+} /*вставляем фигуру в первые ячейки нечетных строк */
+
+table tr:hover td { background: #8d8dff} ; /*подсвечиваем каждую строку при наведении курсора*/
+
+
